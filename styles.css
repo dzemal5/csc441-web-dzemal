@@ -128,3 +128,24 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
+/* Class 14: Step 2: the cards go in a row */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1;
+}
+
+/* Class 14: Step 3: a row when there's room */
+@media (min-width: 40rem) {
+    .cards {
+        flex-direction: row;
+    }
+}
