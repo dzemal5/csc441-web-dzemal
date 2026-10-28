@@ -169,3 +169,11 @@ nav {
         flex-direction: row;
     }
 }
+
+body.dark {
+    --text: white;
+    --text-muted: silver;
+    --accent: skyblue;
+    --background: black;
+    --border: dimgray;
+}
