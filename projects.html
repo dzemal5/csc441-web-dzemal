@@ -4,24 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Class 13 * Step 1: my second page-->
     <title>Projects - Dzemal Crnkic</title>
     <!-- Class 12: Step 1: a typeface I chose-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="styles.css">
+    <!-- Lab 15 · Task 1: my third file -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <!-- Class 13: Step 2: navigation -->
-     <nav>
+    <nav>
         <a href="index.html">Dzemal Crnkic</a>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html" class="current">Projects</a></li>
             <li><a href="reading.html">Reading</a></li>
+            <li><button id="theme-toggle" type="button">Dark</button></li>
         </ul>
-     </nav>
+    </nav>
     <!-- Class 11 · Step 2: the page -->
     <header>
         <!-- Class 12: Step 3: an image -->
@@ -52,7 +55,7 @@
     <footer>
         <!-- Lab 11 · Task 3: a link off my page -->
         <a href="https://github.com/dzemal5" target="_blank" rel="noopener">GitHub</a>
-        <p>© 2026 Dzemal Crnkic</p>
+        <p>© <span id="year"></span> Dzemal Crnkic</p>
     </footer>
 </body>
 
