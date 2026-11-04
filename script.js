@@ -16,7 +16,7 @@ if (themeButton) {
         document.body.classList.add("dark");
         themeButton.textContent = "Light";
     }
-    
+
     themeButton.addEventListener("click", function () {
         document.body.classList.toggle("dark");
 
