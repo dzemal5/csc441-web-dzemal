@@ -10,6 +10,7 @@
     --accent: #2563eb;
     --background: #ffffff;
     --border: #e5e7eb;
+    --error: crimson;
 }
 
 body {
@@ -181,6 +182,7 @@ body.dark {
     --accent: skyblue;
     --background: black;
     --border: dimgray;
+    --error: lightsalmon;
 }
 
 /* Class q6: Step 3: the form */
@@ -221,4 +223,14 @@ form button {
 #form-status {
     font-weight: 700;
     color: var(--accent);
+}
+
+/* Lab 16 · Task 1: the error state */
+#form-status.error {
+  color: var(--error);
+}
+
+/* Class 18: Step 2: the honeypot, hidden from people */
+.hidden-field {
+  display: none;
 }

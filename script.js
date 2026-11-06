@@ -41,8 +41,23 @@ contactForm.addEventListener("submit", function(event) {
     event.preventDefault()
 
     const name = document.querySelector("#name").value;
+    const message = document.querySelector("#message").value.trim();
 
-    formStatus.textContent = "Thanks, " + name + ". Your message is ready to send.";
-    contactForm.reset();
+    if (message.length < 10) {
+      formStatus.textContent = "Please write a bit more, at least 10 characters.";
+      formStatus.classList.add("error");
+      return;
+    }
+ 
+    formStatus.classList.remove("error");
+
+    formStatus.textContent = "Thanks, " + name + ". Sending your message.";
 });
+
+contactForm.addEventListener("input", function () {
+    if (formStatus.classList.contains("error")) {
+      formStatus.textContent = "";
+      formStatus.classList.remove("error");
+    }
+  });
 }
