@@ -51,8 +51,7 @@ contactForm.addEventListener("submit", function(event) {
  
     formStatus.classList.remove("error");
 
-    formStatus.textContent = "Thanks, " + name + ". Your message is ready to send.";
-    contactForm.reset();
+    formStatus.textContent = "Thanks, " + name + ". Sending your message.";
 });
 
 contactForm.addEventListener("input", function () {
