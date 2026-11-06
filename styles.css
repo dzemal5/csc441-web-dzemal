@@ -18,7 +18,7 @@ body {
     background: var(--background);
     line-height: 1.6;
     max-width: 42rem;
-    padding: 3rem 1.5rem;    
+    padding: 3rem 1.5rem;
     margin: 0 auto;
 }
 
@@ -190,7 +190,8 @@ form label {
     margin-bottom: 0.25rem;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     font: inherit;
     width: 100%;
     padding: 0.5rem;
@@ -200,7 +201,8 @@ form input, form textarea {
     color: var(--text);
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
     outline: 2px solid var(--accent);
     outline-offset: 1px;
 }
