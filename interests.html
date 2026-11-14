@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interests - Dzemal Crnkic</title>
+    <!-- Class 12: Step 1: a typeface I chose-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Class 15: Step 1: my third file -->
+    <script src="script.js" defer></script>
+    <!-- Class 20: Step 2: API connection, then API page -->
+    <script src="config.js" defer></script>
+    <script src="interests.js" defer></script>
+</head>
+
+<body>
+    <!-- Class 13: Step 2: navigation -->
+    <nav>
+        <a href="index.html">Dzemal Crnkic</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="reading.html">Reading</a></li>
+            <li><a href="interests.html" class="current">Interests</a></li>
+            <!-- Class 16: Step 1: the contact link -->
+            <li><a href="contact.html">Contact</a></li>
+            <!-- Class 15: Step 3: the theme button -->
+            <li><button id="theme-toggle" type="button">Dark</button></li>
+        </ul>
+    </nav>
+    <!-- Class 11 · Step 2: the page -->
+    <header>
+        <!-- Class 12: Step 3: an image -->
+        <img src="images/me.jpg" alt="Portrait of Dzemal Crnkic" class="portrait">
+        <!-- Lab 12 · Task 1: group the text so it stacks beside the photo -->
+        <div class="header-text">
+            <h1>Dzemal Crnkic</h1>
+            <p>Computer science professor at Le Moyne College.</p>
+        </div>
+    </header>
+    <main>
+        <!-- Class 20: Step 1: add inside the existing <main> on interests.html -->
+        <section class="interests-section">
+            <h2>My Interests</h2>
+            <p>
+                These items come from my Supabase database.
+            </p>
+            <p id="showcase-status" role="status">Waiting to load...</p>
+            <p id="showcase-count"></p>
+            <!-- Lab 20 · Task 2: ask the API again -->
+            <button id="showcase-refresh" type="button">Refresh items</button>
+            <div id="showcase-grid" class="showcase-grid"></div>
+        </section>
+    </main>
+    <footer>
+        <!-- Lab 11 · Task 3: a link off my page -->
+        <a href="https://github.com/dzemal5" target="_blank" rel="noopener">GitHub</a>
+        <!-- Class 15: Step 2: the year, written by JavaScript -->
+        <p>© <span id="year"></span> Dzemal Crnkic</p>
+    </footer>
+</body>
+
+</html>
